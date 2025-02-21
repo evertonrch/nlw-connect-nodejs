@@ -1,0 +1,19 @@
+services:
+
+  postgresql:
+    image: bitnami/postgresql
+    container_name: pg-server
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=node
+      - POSTGRES_PASSWORD=node
+      - POSTGRES_DB=connect
+    
+  redis:
+    image: bitnami/redis
+    container_name: redis
+    ports:
+      - '6379:6379'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
