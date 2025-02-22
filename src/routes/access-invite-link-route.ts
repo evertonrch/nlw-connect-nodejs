@@ -15,6 +15,9 @@ export const accessInviteLinkRoute: FastifyPluginAsync = async app => {
         summary: "Access invite link and redirects user",
         tags: ["referral"],
         params: paramsSchema,
+        response: {
+          302: z.null(),
+        },
       },
     },
     async (request, reply) => {

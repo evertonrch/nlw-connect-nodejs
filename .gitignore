@@ -3,3 +3,4 @@ node_modules
 .vscode
 api.http
 biome.json
+dist
