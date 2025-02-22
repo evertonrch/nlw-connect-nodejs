@@ -67,13 +67,13 @@ Isso transpilará os arquivos TypeScript para JavaScript na pasta dist.
   npm run dev
 ```
 
-O servidor será iniciado em `http://localhost:3333`.
+O servidor será iniciado em `http://localhost:<ENV_PORT>`.
 
 ## 📌 Endpoints da API
 
 A API está documentada usando Swagger. Após iniciar o projeto, acesse:
 ```
-http://localhost:3000/docs
+http://localhost:<ENV_PORT>/docs
 ```
 
 ---
